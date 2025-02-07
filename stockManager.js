@@ -27,9 +27,6 @@ class StockManager {
         this.stock[name] -= quantity;
     }
 
-    generateReport() {
-        return Object.entries(this.stock).map(([name, quantity]) => ({ name, quantity }));
-    }
 }
 
 module.exports = StockManager;
